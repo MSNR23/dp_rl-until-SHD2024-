@@ -62,10 +62,10 @@ q2_dot0 = 0.0
 dt = 0.005
 
 # CSVファイルの保存先ディレクトリ
-save_dir1 = r'1.90_0.14_max_R_bow'
-save_dir2 = r'1.90_0.14_try_bow'
-save_dir3 = r'1.90_0.14_maxQ_bow'
-save_dir4 = r'1.90_0.14_finQ_bow'
+save_dir1 = r'1.90_0.14_max_R'
+save_dir2 = r'1.90_0.14_try'
+save_dir3 = r'1.90_0.14_maxQ'
+save_dir4 = r'1.90_0.14_finQ'
 
 # ディレクトリが存在しない場合は作成
 if not os.path.exists(save_dir1):
