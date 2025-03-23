@@ -4,7 +4,7 @@ import glob
 import re
 
 # Qテーブルが保存されているディレクトリのパス
-csv_files_path = '/home/k-ito/example_re/confirm/*.csv'
+csv_files_path = './1.90_0.14_finQ/*.csv'
 
 # 全てのエピソードごとのCSVファイルを読み込む
 csv_files = glob.glob(csv_files_path)
@@ -53,7 +53,7 @@ df = pd.DataFrame({
 })
 
 # 結果をCSVファイルに保存
-df.to_csv('0924_con0.14.0max_rewards.csv', index=False)
+df.to_csv('1.90_0.14_max_rewards.csv', index=False)
 
 # グラフの描画
 plt.figure(figsize=(10, 6))
