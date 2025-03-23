@@ -44,10 +44,10 @@ def update(frame, theta1_data, theta2_data, x2_traj, y2_traj):
     return pendulum1, pendulum2, trajectory
 
 # CSVファイルのパス
-csv_file_path = 'try_2070.csv'
+csv_files_path = './1.90_0.14_try/try_4.csv'
 
 # CSVファイルからデータを読み取る
-time_data, theta1_data, theta2_data = read_csv_data(csv_file_path)
+time_data, theta1_data, theta2_data = read_csv_data(csv_files_path)
 
 # 軌跡を保存するためのリスト
 x2_traj = []
@@ -69,5 +69,5 @@ ax.legend()
 ani = FuncAnimation(fig, update, frames=len(time_data), fargs=(theta1_data, theta2_data, x2_traj, y2_traj), init_func=init, blit=False, interval=1)
 
 # アニメーションをMP4形式で保存
-ani.save('0926_1.900.14_10.mp4', writer='ffmpeg', fps=10)
+ani.save('1.90_0.14_10.mp4', writer='ffmpeg', fps=10)
 plt.show()
